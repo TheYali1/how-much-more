@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <link rel="icon" type="image/png" href="how much more.png">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>עוד כמה נשאר?</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Rubik', sans-serif;
+            line-height: 1.6;
+            background-color: #002400;
+            color: white;
+            direction: rtl;
+            overflow-x: hidden;
+            scroll-behavior: smooth; /* מעביר חלקות בין מקטעים */
+        }
+
+        /* Header */
+        header {
+            background-color: #004a00;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            flex-wrap: wrap;
+        }
+
+        .navbar .logo img {
+            width: 100px;
+            height: auto;
+            cursor: pointer;
+        }
+
+        .navbar nav ul {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar nav ul li {
+            flex: 1;
+            text-align: center;
+        }
+
+        .navbar nav ul li a {
+            text-decoration: none;
+            padding: 10px 20px;
+            color: white;
+            background-color: #00b300;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s, transform 0.3s;
+            display: block;
+        }
+
+        .navbar nav ul li a:hover {
+            background-color: lime;
+            transform: scale(1.1); /* אפקט קל של גודל */
+        }
+
+        /* Main Content */
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: lime;
+            margin-bottom: 15px;
+            text-shadow: 0 0 10px lime;
+        }
+
+        section p, section ul {
+            font-size: 1.2rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #001800;
+            padding: 10px 0;
+            color: #888;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .navbar nav ul {
+                flex-direction: column;
+                gap: 10px;
+                width: 100%;
+            }
+
+            .navbar nav ul li a {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- כותרת עליונה -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img id="logo-image" src="how much more.png" alt="לוגו">
+            </div>
+            <nav>
+                <ul>
+                    <div class="button-container">
+                        <li><a class="btn" href="#about">על האפליקציה</a></li>
+                        <li><a class="btn" href="#features">תכונות</a></li>
+                        <li><a class="btn" href="#download">הורדה</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- תוכן האתר -->
+    <main>
+        <section id="about">
+            <h2>על האפליקציה</h2>
+            <p>האפליקציה עוזרת לך לעקוב אחר הימים שנשארו עד חופשת הקיץ!</p>
+            <div class="app-screenshots">
+                <!-- הוסף תמונות של האפליקציה -->
+                <img src="screenshot1.png" alt="תמונה 1 של האפליקציה" class="app-image">
+                <img src="screenshot2.png" alt="תמונה 2 של האפליקציה" class="app-image">
+                <img src="screenshot3.png" alt="תמונה 3 של האפליקציה" class="app-image">
+            </div>
+        </section>
+
+        <section id="features">
+            <h2>תכונות</h2>
+            <ul>
+                <li>
+                    <img src="feature1-icon.png" alt="תכונה 1" class="feature-icon">
+                    <span>ספירה מדויקת של הימים</span>
+                </li>
+                <li>
+                    <img src="feature2-icon.png" alt="תכונה 2" class="feature-icon">
+                    <span>עיצוב קל לשימוש</span>
+                </li>
+                <li>
+                    <img src="feature3-icon.png" alt="תכונה 3" class="feature-icon">
+                    <span>עדכון בזמן אמת</span>
+                </li>
+                <li>
+                    <img src="feature4-icon.png" alt="תכונה 4" class="feature-icon">
+                    <span>טעינה מהירה</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="download">
+            <h2>הורדה</h2>
+            <p>האפליקציה זמינה להורדה למכשירי Android.</p>
+            <div class="buttons">
+                <!-- כפתור הורדה -->
+                <a class="btn" href="עוד כמה נשאר.apk" download onclick="window.location.href = 'guide.html';">הורד עכשיו</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- כותרת תחתונה -->
+    <footer>
+        <p>&copy; 2024 כמה נשאר? | כל הזכויות שמורות ליהלי מסלוי</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

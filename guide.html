@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <link rel="icon" type="image/png" href="how much more.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מדריך התקנה</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+#guide {
+    margin-bottom: 30px; /* רווח בתחתית קטע ה-guide */
+}
+
+.instructions {
+    margin-top: 30px; /* רווח מעל קטע ה-instructions */
+}
+
+.btn {
+    margin: 3%; /* רווח בין הכפתורים */
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img id="logo-image" src="how much more.png" alt="לוגו">
+            </div>
+        </div>
+    </header>
+
+    <!-- תוכן המדריך -->
+    <main>
+        <section id="guide">
+            <h2>איך להתקין את האפליקציה</h2>
+            <p>כדי להתקין את האפליקציה על מכשיר אנדרואיד שלך, עקוב אחרי הצעדים הבאים:</p>
+            <ol>
+                <li>
+                    <h3>שלב 1: הורד את קובץ ה-APK</h3>
+                    <p>לחץ על כפתור ההורדה והורד את קובץ ה-APK.</p>
+                </li>
+                <li>
+                    <h3>שלב 2: הפעל את ההגדרות</h3>
+                    <p>אם לא הגדרת את המכשיר שלך להתקין אפליקציות ממקורות לא ידועים, עבור אל הגדרות > אבטחה והפעל את האפשרות "התקנה ממקורות לא ידועים".</p>
+                </li>
+                <li>
+                    <h3>שלב 3: התקן את ה-APK</h3>
+                    <p>עבור אל תיקיית ההורדות במכשיר שלך ומצא את קובץ ה-APK. לחץ על קובץ ה-APK והתחל בהתקנה.</p>
+                </li>
+                <li>
+                    <h3>שלב 4: סיום</h3>
+                    <p>לאחר ההתקנה, האפליקציה תהיה זמינה להפעלה!</p>
+                </li>
+            </ol>
+            <p>אם לא הצלחת להוריד את קובץ ה-APK, אנא לחץ על הכפתור למטה להורדה מחדש.</p>
+            <!-- כפתור להורדה מחדש אם לא הצליחה -->
+            <div class="retry-download">
+            </div>
+            <!-- הסבר נוסף עם תמונות -->
+            <div class="instructions">
+                <h2>אם ההורדה לא מתבצעת</h2>
+                <p>אם הבעיה נמשכת, בדוק את הצעדים הבאים:</p>
+                <ol>
+                    <li>בדוק אם יש חיבור אינטרנט פעיל.</li>
+                    <li>אם קיבלת הודעה על בעיה בהורדה, נסה להוריד את קובץ ה-APK ישירות מהקישור למטה:</li>
+                </ol>
+                <a class="btn" href="עוד כמה נשאר.apk" download>הורד מחדש</a>
+                <p>אם עדיין יש בעיה, אנא עקוב אחרי ההסבר בתמונות למטה:</p>
+                <img src="image1.png" alt="שלב 1: לחץ על קובץ ה-APK" />
+                <img src="https://cdn2.unrealengine.com/en-step3-576x176-359075d29c7a.png" alt="שלב 2: הפעל את ההגדרות" />
+                
+            </div>
+            <a class="btn" href="index.html">חזרה לדף הבית</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 כמה נשאר? | כל הזכויות שמורות ליהלי מסלוי</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

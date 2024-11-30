@@ -1,0 +1,442 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Assistant', sans-serif;
+    line-height: 1.6;
+    background-color: #002400;
+    color: white;
+    direction: rtl;
+}
+
+/* Navbar */
+header {
+    background-color: #004a00;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navbar .logo img {
+    width: 100px; /* הגדרת גודל אחיד ללוגו */
+    height: 100px; /* שמירה על פרופורציות */
+    border-radius: 50%; /* עיגול התמונה */
+    cursor: pointer;
+    transition: transform 0.5s cubic-bezier(0.65, 0, 0.35, 1), /* circ */
+                transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* back */
+}
+
+.navbar .logo img.shrink {
+    transform: scale(0.2);
+    transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1); /* circ */
+}
+
+.navbar .logo img.grow {
+    transform: scale(1);
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55); /* back */
+}
+
+/* קונטיינר של הכפתורים */
+.button-container {
+    display: flex; /* הצגת אלמנטים אופקית */
+    gap: 15px; /* רווח בין הכפתורים */
+    justify-content: center; /* ממרכז את הכפתורים */
+    margin-top: 20px; /* רווח למעלה */
+}
+
+/* עיצוב הכפתורים */
+.btn {
+    text-decoration: none;
+    padding: 12px 25px;
+    color: white;
+    background: linear-gradient(45deg, #00b300, #009900);
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+
+/* אפקט במעבר עכבר */
+.btn:hover {
+    transform: scale(1.1) translateZ(0);
+    box-shadow: 0 6px 15px rgba(0, 255, 0, 0.4);
+    background: linear-gradient(45deg, #00ff00, #00cc00);
+}
+
+
+/* Sections */
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: lime;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px lime;
+}
+
+section p, section ul {
+    font-size: 1.2rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #001800;
+    padding: 10px 0;
+    color: #888;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* עיצוב התמונות של האפליקציה */
+.app-screenshots {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.app-image {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* עיצוב אייקונים בתכונות */
+.feature-icon {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    gap: 10px; /* רווח בין האייקון לטקסט */
+}
+
+.feature-icon {
+    width: 50px;
+    height: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#download h2 {
+    margin-bottom: 20px; /* רווח בין הכותרת לטקסט */
+}
+
+#download p {
+    margin-bottom: 20px; /* רווח בין הטקסט לכפתור */
+}
+
+#download .btn {
+    padding: 15px 25px; /* שיפור העיצוב של הכפתור */
+    font-size: 1.2rem; /* הגדלת הטקסט בכפתור */
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* כל האתר */
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold; /* להדגיש את הפונט */
+    line-height: 1.6;
+    background-color: #002400;
+    color: white;
+    direction: rtl;
+}
+
+/* עיצוב כללי - Desktop (ברירת מחדל) */
+body {
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.6;
+    background-color: #002400;
+    color: white;
+    direction: rtl;
+    margin: 0;
+}
+
+header {
+    background-color: #004a00;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navbar .logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar nav ul li {
+    margin: 0;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background-color: #00b300;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    background-color: lime;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: lime;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px lime;
+}
+
+section p, section ul {
+    font-size: 1.2rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #001800;
+    padding: 10px 0;
+    color: #888;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* עיצוב לטלפונים - מסכים קטנים */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navbar nav ul li a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    section p, section ul {
+        font-size: 1rem;
+    }
+
+    ul li {
+        margin: 5px 0;
+    }
+}
+
+header {
+    background-color: #004a00;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%; /* ודא שהכותרת תופסת את כל הרוחב */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    flex-wrap: wrap; /* מאפשר לאלמנטים לעבור שורה בטלפונים */
+    width: 100%;
+}
+
+.navbar .logo {
+    flex: 1; /* הגדר פריסה נכונה ללוגו */
+    display: flex;
+    justify-content: center;
+}
+
+.navbar nav {
+    flex: 2; /* קבע פריסה לניווט */
+    display: flex;
+    justify-content: center;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar nav ul li {
+    margin: 0;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background-color: #00b300;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.navbar nav ul li a:hover {
+    background-color: lime;
+}
+
+/* לטלפונים */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* מסדר את כל האלמנטים בטור */
+    }
+
+    .navbar .logo {
+        margin-bottom: 10px;
+    }
+
+    .navbar nav ul {
+        flex-direction: column; /* מסדר את הכפתורים בטור */
+        width: 100%;
+    }
+
+    .navbar nav ul li a {
+        display: block;
+        width: 100%; /* שהכפתורים יתפסו את כל הרוחב */
+        text-align: center;
+    }
+}
+
+/* ניווט */
+.navbar nav ul {
+    display: flex;
+    justify-content: center; /* מרכז את הכפתורים */
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navbar nav ul li {
+    flex: none; /* מבטיח שכל כפתור יתפוס את הגודל שלו */
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background-color: #00b300;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block; /* מוודא שכל כפתור יישאר בגודלו */
+    text-align: center;
+    white-space: nowrap; /* מונע עיוות או קפיצה של טקסט */
+}
+
+.navbar nav ul li a:hover {
+    background-color: lime;
+    transform: scale(1.1); /* אפקט קל של גודל */
+}
+
+/* הסרת שולי פנימיים או חיצוניים חריגים */
+.navbar nav ul li a {
+    margin: 0; /* ודא שאין ריווח בין הכפתורים */
+    padding: 10px 20px; /* שמור על ריווח אחיד */
+}
+
