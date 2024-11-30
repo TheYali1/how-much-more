@@ -4,3 +4,5 @@
 
 # שימו לב אלה רק הקבצים של האתר ולא של הקובץ APK!
 
+למי שחושב שהאפליקציה שלי היא וירוס אז הנה 
+[בדיקת VirusTotal](https://www.virustotal.com/gui/file/d96a2bd306ef7ba0b77da03efb2bff3e9a782f4506bcf42226a4b8d2b23180f9/detection)
